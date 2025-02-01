@@ -56,8 +56,36 @@ namespace StudentList
             Array.Sort(studentList);
             for (int i = 0; i < studentList.Length; i++)
             {
-                Console.WriteLine(studentList[i]);
+                Console.WriteLine($"{i + 1}. {studentList[i]}");
             }
+            Console.WriteLine("\nWould you like to remove a student from the list? if so, please type the name of the student ");
+            string input = Console.ReadLine();
+            if (studentList.Contains(input))
+            {
+                studentList = studentList.Where(name => name != input) .ToArray();
+                Console.WriteLine("\nUpdated list of names: ");
+                if (studentList.Length == 0)
+                {
+                    Console.WriteLine("The student list is now empty.");
+                }
+                else
+                {
+                    for(int i = 0; i < studentList.Length; i++)
+                        {
+                            Console.WriteLine(studentList[i]);
+                        }
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine("That name does not exist in the current class");
+                
+            }
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+
+
         }  
     }
 }

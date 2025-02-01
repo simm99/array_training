@@ -12,3 +12,4 @@ C:\Users\simm9\source\repos\array_students\obj\Debug\net8.0\refint\array_student
 C:\Users\simm9\source\repos\array_students\obj\Debug\net8.0\array_students.pdb
 C:\Users\simm9\source\repos\array_students\obj\Debug\net8.0\array_students.genruntimeconfig.cache
 C:\Users\simm9\source\repos\array_students\obj\Debug\net8.0\ref\array_students.dll
+C:\Users\simm9\source\repos\array_students\obj\Debug\net8.0\array_students.sourcelink.json
